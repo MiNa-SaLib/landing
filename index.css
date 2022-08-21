@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #070107;
+
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  /* background-color: #333; */
+  color: white;
+  position: relative;
+  z-index: 11;
+}
+nav h2 {
+  text-transform: uppercase;
+}
+nav .fa-bars {
+  display: none;
+  font-size: 25px;
+}
+
+nav li {
+  margin-right: 15px;
+}
+nav li a {
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+}
+nav li a:hover,
+.active {
+  background-color: white;
+  color: #333;
+}
+.main {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+@media (max-width: 762px) {
+  ul {
+    margin-left: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    top: 100%;
+    left: 0;
+    background-color: rgb(33 150 243 / 51%);
+    width: 100%;
+    padding: 10px;
+    height: 100vh;
+    /* transition: 1s; */
+    transition-timing-function: linear;
+  }
+  .container {
+    overflow: hidden;
+  }
+  ul li {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  ul li a {
+    width: 100%;
+  }
+  nav .fa-bars {
+    display: block;
+  }
+}
+.visible {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  top: 100%;
+  left: 0;
+  background-color: rgb(33 150 243 / 51%);
+  width: 100%;
+  padding: 10px;
+  height: 100vh;
+  margin-left: 0;
+  transition: 1s;
+}
+.content {
+  padding: 10px;
+  color: white;
+  padding-top: 50px;
+  background-color: #1a0718;
+}
+
+.content p {
+  padding: 20px;
+  line-height: 1.6;
+}
+.main p {
+  color: white;
+  text-align: center;
+  margin-bottom: 400px;
+  text-transform: uppercase;
+}
